@@ -1,0 +1,47 @@
+.button {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.nav__button {
+    width: 90px;
+    height: 50px;
+    margin: 0;
+    border: none;
+    white-space: normal;
+    background-color: transparent;
+    color: $accent1;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 0;
+    transition: all .3s ease;
+
+    &--past {
+      padding: 0 10px;
+    }
+
+    &--active {
+      font-size: 18px;
+      @include text-bold();
+      transition: all .5s ease;
+    }
+  }
+
+  &.card__show-more-button {
+    margin: 30px;
+    padding: 10px 50px;
+    font-size: 16px;
+    color: $accent4;
+    background-color: transparent;
+    border: none;
+
+    .show-more-button__chevron {
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+}

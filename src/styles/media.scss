@@ -1,0 +1,29 @@
+@media screen and (min-width: 400px) {
+  .button.nav__button {
+    margin: 0 18px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+ .users-list {
+    margin: 0 12%;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .user-card {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .user-card {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: $full-hd) {
+  .user-card {
+    width: 20%;
+  }
+}

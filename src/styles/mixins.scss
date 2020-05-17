@@ -1,0 +1,7 @@
+@function toRem($target, $context: $font-height) {
+  @return $target / $context * 1rem;
+}
+
+@mixin text-bold {
+  font-family: "Vodafone Regular Bold", sans-serif;
+}

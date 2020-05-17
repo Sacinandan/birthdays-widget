@@ -1,0 +1,17 @@
+.users-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 4px;
+  padding-top: 15px;
+  text-align: center;
+
+  &__status-message {
+    margin: 0;
+    padding: 40px 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: $accent4;
+  }
+}

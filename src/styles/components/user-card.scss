@@ -1,0 +1,41 @@
+.user-card {
+  display: flex;
+  margin: 15px;
+  width: 90%;
+  height: auto;
+
+  &__avatar {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+  }
+
+  &__user-info {
+    margin-left: 20px;
+    padding: 5px 0;
+    text-align: left;
+
+    .user-info {
+
+      &__name {
+        margin: 0;
+        color: $accent5;
+        font-size: 18px;
+      }
+
+      &__job {
+        margin: 5px 0 0;
+        height: 42px;
+        color: $accent3;
+        font-size: 18px;
+      }
+
+      &__birthday {
+        margin: 0;
+        color: $accent5;
+        font-size: 18px;
+        @include text-bold();
+      }
+    }
+  }
+}
