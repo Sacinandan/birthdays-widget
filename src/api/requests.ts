@@ -16,5 +16,3 @@ const getData = async (interval: timeIntervalType): Promise<responseType> => {
 
 export type responseType = IUser[] | []
 export default getData
-
-

@@ -8,8 +8,9 @@ export const getLongFormat = (dateStr: string): string => {
 }
 
 export const getDigitFormat = (date: Date): string => {
-  const month: string = date.toLocaleString('en', { month: '2-digit' })
-  const day: string = date.toLocaleString('en', { day: '2-digit' })
+  const regex = /[^ -~]/g //  Fix IE Date.toLocaleString bug
+  const month: string = date.toLocaleString('en', { month: '2-digit' }).replace(regex,'')
+  const day: string = date.toLocaleString('en', { day: '2-digit' }).replace(regex,'')
   return (`${ month }.${ day }`)
 }
 
